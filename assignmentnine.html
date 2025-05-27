@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Image in Marquee</title>
+ <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.header {
+  background-color: #42005c;
+  color: white;
+  padding: 15px;
+}
+
+.header h2 {
+  margin-top: 0;
+}
+
+.marquee {
+  overflow: hidden;
+  background-color: white;
+  padding: 10px 0;
+  border-top: 2px solid #ccc;
+}
+
+.marquee-content {
+  display: flex;
+  width: max-content;
+  animation: scroll 10s linear infinite;
+  gap: 30px;
+}
+
+.marquee-content img {
+  width: 200px;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Marquee animation */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+ </style>
+</head>
+<body>
+  <div class="header">
+    <h2>Image in Marquee</h2>
+    <p>
+      A "marquee image" refers to an image displayed prominently on a website, often in a rectangular area, usually at the top of the page. It's a large, eye-catching image used to grab the visitor's attention and convey a main message or visual theme. Marquee images are frequently used to create a sense of visual hierarchy,
+       emphasizing the most important content or promotional message on the page. 
+    </p>
+  </div>
+
+  <div class="marquee">
+    <div class="marquee-content">
+      <img src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"alt="Book Image" />
+      <img src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Book Image" />
+      <img src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Book Image" />
+      <img src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Book Image" />
+    </div>
+  </div>
+</body>
+</html>
